@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: 'Poppins', sans-serif;
+    background: url("img/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.container{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    padding: 30px 0;
+    user-select: none;
+}
+h1{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 50px;
+}
+.wrapper{
+    width: 90%;
+    max-width: 900px;
+}
+.row{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+.col{
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px 15px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+}
+.col h4{
+    font-size: 45px;
+}
+.col p{
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+@media (max-width: 768px) {
+    .row{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    h1{
+        font-size: 30px;
+    }
+}
+@media (max-width: 450px) {
+    .row{
+        grid-template-columns: 1fr;
+    }
+    h1{
+        font-size: 25px;
+    }
+}
+
+.control{
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.control .inputPart{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 991px) {
+    .control .inputPart{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    .control .inputPart{
+        grid-template-columns: 1fr;
+    }
+}
+.control .inputPart input{
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+}
+.control .inputPart input::placeholder{
+    color: #fff;
+    opacity: 0.9;
+}
+#runTime{
+    width: 100%;
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#runTime:active{
+    transform: translate(2px, 5px);
+}
+audio{
+    background-color: red;
+}
