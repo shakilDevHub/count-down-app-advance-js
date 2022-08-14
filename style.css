@@ -136,6 +136,7 @@ h1{
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
+    border: none;
 }
 #runTime:active{
     transform: translate(2px, 5px);
