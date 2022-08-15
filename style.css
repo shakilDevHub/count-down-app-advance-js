@@ -75,6 +75,9 @@ h1{
     h1{
         font-size: 30px;
     }
+    .col h4{
+        font-size: 35px;
+    }
 }
 @media (max-width: 450px) {
     .row{
