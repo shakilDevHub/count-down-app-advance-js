@@ -83,33 +83,6 @@ h1{
     align-items: center;
     justify-content: center;
 }
-@media (max-width: 991px) {
-    .control .inputPart{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media (max-width: 768px) {
-    .row{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    h1{
-        font-size: 30px;
-    }
-    .col h4{
-        font-size: 35px;
-    }
-    .control .inputPart{
-        grid-template-columns: 1fr;
-    }
-}
-@media (max-width: 450px) {
-    .row{
-        grid-template-columns: 1fr;
-    }
-    h1{
-        font-size: 25px;
-    }
-}
 .control .inputPart input{
     width: 100%;
     padding: 10px 15px;
@@ -142,4 +115,31 @@ h1{
 }
 #runTime:active{
     transform: translate(2px, 5px);
+}
+@media (max-width: 991px) {
+    .control .inputPart{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    .row{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    h1{
+        font-size: 30px;
+    }
+    .col h4{
+        font-size: 35px;
+    }
+    .control .inputPart{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 450px) {
+    .row{
+        grid-template-columns: 1fr;
+    }
+    h1{
+        font-size: 25px;
+    }
 }
